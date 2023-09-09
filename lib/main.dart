@@ -4,6 +4,8 @@ import 'Screens/screens.dart';
 import 'package:rahil_shaikh/core/core.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
   RootBinding().dependencies();
   runApp(const MyApp());
 }

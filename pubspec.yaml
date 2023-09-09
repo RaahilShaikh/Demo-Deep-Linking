@@ -39,6 +39,7 @@ dependencies:
   flutter_screenutil: ^5.9.0
   collection: ^1.15.0
   intl: ^0.18.1
+  uni_links: ^0.5.1
 
 dev_dependencies:
   flutter_test:
