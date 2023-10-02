@@ -31,9 +31,9 @@ if you check this in emulator follow the below steps to check uni_link functiona
         <img src="images/Screen2.png" alt="Screen 2" width="185" height="400"> &nbsp;
         <img src="images/Screen3.png" alt="Screen 3" width="185" height="400"> &nbsp;
     </div>
-&nbsp; &nbsp;
+&nbsp; 
 
-- ## cmd example
+- ## CMD example
 <div>
     <img src="images/img_cmdOfUniLink.png" alt="img_cmdOfUniLink" width="400" height="200">
 </div>
