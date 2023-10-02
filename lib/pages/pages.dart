@@ -1,5 +1,5 @@
-export './homePage.dart';
-export './challengesPage.dart';
-export './pomodoroPage.dart';
-export './timeBoxPage.dart';
-export './accountPage.dart';
+export 'home_page.dart';
+export 'challenges_page.dart';
+export 'pomodoro_page.dart';
+export 'timebox_page.dart';
+export 'account_page.dart';

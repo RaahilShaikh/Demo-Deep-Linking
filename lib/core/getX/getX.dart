@@ -1,2 +1,2 @@
 export 'controllers/controllers.dart';
-export './rootBinding/RootBinding.dart';
+export './rootBinding/root_binding.dart';

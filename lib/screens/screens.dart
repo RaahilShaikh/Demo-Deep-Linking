@@ -1,1 +1,1 @@
-export './bottomNavigationBarUI.dart';
+export 'bottom_navbar_ui.dart';

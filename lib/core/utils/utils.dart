@@ -1,5 +1,5 @@
 export './enums.dart';
-export './customTextView.dart';
-export './themeData.dart';
-export './commonWidgets.dart';
-export './customDigitalClock.dart';
+export 'custom_textview.dart';
+export 'theme_data.dart';
+export 'common_widgets.dart';
+export 'custom_digital_clock.dart';

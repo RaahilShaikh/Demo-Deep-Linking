@@ -22,10 +22,12 @@ class HomePageUI extends StatelessWidget {
                 children: [
                   /// Top section (App bar view)
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 15.sp, horizontal: 16.w),
+                    padding:
+                        EdgeInsets.symmetric(vertical: 15.sp, horizontal: 16.w),
                     child: Row(children: [
                       Stack(alignment: Alignment.center, children: [
-                        Image.asset("icons/ic_blueOval.png", height: 30.sp, width: 30.sp),
+                        Image.asset("icons/ic_blueOval.png",
+                            height: 30.sp, width: 30.sp),
                         CustomText(
                           text: "999",
                           textSize: 10.sp,
@@ -36,30 +38,36 @@ class HomePageUI extends StatelessWidget {
                       ]),
                       SizedBox(width: 5.w),
                       Expanded(
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
-                        CustomText(
-                          text: "Total",
-                          textSize: 10.sp,
-                          fontWeight: FontWeight.w400,
-                          color: MyAppColors.primaryWhiteColor,
-                          fontFamily: FontFamily.sfProRegular,
-                        ),
-                        CustomText(
-                          text: "Experience",
-                          textSize: 10.sp,
-                          fontWeight: FontWeight.w600,
-                          color: MyAppColors.primaryBlueColor,
-                          fontFamily: FontFamily.sfProRegular,
-                        ),
-                      ])),
+                          child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                            CustomText(
+                              text: "Total",
+                              textSize: 10.sp,
+                              fontWeight: FontWeight.w400,
+                              color: MyAppColors.primaryWhiteColor,
+                              fontFamily: FontFamily.sfProRegular,
+                            ),
+                            CustomText(
+                              text: "Experience",
+                              textSize: 10.sp,
+                              fontWeight: FontWeight.w600,
+                              color: MyAppColors.primaryBlueColor,
+                              fontFamily: FontFamily.sfProRegular,
+                            ),
+                          ])),
                       Container(
                           height: 30.sp,
                           width: 70.w,
-                          decoration: BoxDecoration(color: MyAppColors.primaryYellowColor, borderRadius: BorderRadius.circular(15.sp)),
+                          decoration: BoxDecoration(
+                              color: MyAppColors.primaryYellowColor,
+                              borderRadius: BorderRadius.circular(15.sp)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset("icons/ic_coin.png", height: 30.sp, width: 30.sp),
+                              Image.asset("icons/ic_coin.png",
+                                  height: 30.sp, width: 30.sp),
                               SizedBox(width: 3.w),
                               CustomText(
                                 text: "346",
@@ -70,11 +78,14 @@ class HomePageUI extends StatelessWidget {
                             ],
                           )),
                       SizedBox(width: 5.w),
-                      Image.asset("icons/ic_dialog.png", height: 30.sp, width: 30.sp),
+                      Image.asset("icons/ic_dialog.png",
+                          height: 30.sp, width: 30.sp),
                       SizedBox(width: 5.w),
-                      Image.asset("icons/ic_calendar.png", height: 30.sp, width: 30.sp),
+                      Image.asset("icons/ic_calendar.png",
+                          height: 30.sp, width: 30.sp),
                       SizedBox(width: 5.w),
-                      Image.asset("icons/ic_menu.png", height: 30.sp, width: 30.sp)
+                      Image.asset("icons/ic_menu.png",
+                          height: 30.sp, width: 30.sp)
                     ]),
                   ),
 
@@ -87,7 +98,8 @@ class HomePageUI extends StatelessWidget {
                       children: [
                         /// Clock and weather section
                         Padding(
-                          padding: EdgeInsets.symmetric(vertical: 15.sp, horizontal: 16.w),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 15.sp, horizontal: 16.w),
                           child: Row(
                             children: [
                               Expanded(
@@ -96,7 +108,11 @@ class HomePageUI extends StatelessWidget {
                                 width: double.infinity,
                                 clipBehavior: Clip.antiAlias,
                                 alignment: Alignment.center,
-                                decoration: BoxDecoration(color: MyAppColors.primaryExtraLightGreenColor, borderRadius: BorderRadius.all(Radius.circular(10.sp))),
+                                decoration: BoxDecoration(
+                                    color:
+                                        MyAppColors.primaryExtraLightGreenColor,
+                                    borderRadius: BorderRadius.all(
+                                        Radius.circular(10.sp))),
                                 // child: DigitalClock(
                                 //   showSeconds: false,
                                 //   isLive: true,
@@ -108,7 +124,9 @@ class HomePageUI extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     CustomText(
-                                      text: DateFormat('h:mm').format(DateTime.now()).toString(),
+                                      text: DateFormat('h:mm')
+                                          .format(DateTime.now())
+                                          .toString(),
                                       textSize: 90.sp,
                                       fontFamily: FontFamily.alumniSansRegular,
                                       color: MyAppColors.primaryBlackColor,
@@ -118,9 +136,12 @@ class HomePageUI extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsets.only(top: 20.sp),
                                       child: CustomText(
-                                        text: DateFormat('a').format(DateTime.now()).toString(),
+                                        text: DateFormat('a')
+                                            .format(DateTime.now())
+                                            .toString(),
                                         textSize: 14.sp,
-                                        fontFamily: FontFamily.alumniSansRegular,
+                                        fontFamily:
+                                            FontFamily.alumniSansRegular,
                                         color: MyAppColors.primaryBlackColor,
                                         textAlign: TextAlign.center,
                                         fontWeight: FontWeight.w700,
@@ -133,16 +154,24 @@ class HomePageUI extends StatelessWidget {
                                 height: 105.sp,
                                 width: 95.sp,
                                 margin: EdgeInsets.only(left: 10.w),
-                                decoration: BoxDecoration(color: MyAppColors.primaryExtraLightGreenColor, borderRadius: BorderRadius.all(Radius.circular(10.sp))),
-                                padding: EdgeInsets.symmetric(vertical: 8.sp, horizontal: 13.sp),
+                                decoration: BoxDecoration(
+                                    color:
+                                        MyAppColors.primaryExtraLightGreenColor,
+                                    borderRadius: BorderRadius.all(
+                                        Radius.circular(10.sp))),
+                                padding: EdgeInsets.symmetric(
+                                    vertical: 8.sp, horizontal: 13.sp),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
                                       children: [
                                         CustomText(
-                                          text: DateFormat('E').format(DateTime.now()).toString(),
+                                          text: DateFormat('E')
+                                              .format(DateTime.now())
+                                              .toString(),
                                           textSize: 18.sp,
                                           fontFamily: FontFamily.sfProRegular,
                                         ),
@@ -150,7 +179,9 @@ class HomePageUI extends StatelessWidget {
                                           width: 3.w,
                                         ),
                                         CustomText(
-                                          text: DateFormat('dd').format(DateTime.now()).toString(),
+                                          text: DateFormat('dd')
+                                              .format(DateTime.now())
+                                              .toString(),
                                           fontWeight: FontWeight.w700,
                                           textSize: 18.sp,
                                           fontFamily: FontFamily.sfProMedium,
@@ -158,7 +189,8 @@ class HomePageUI extends StatelessWidget {
                                       ],
                                     ),
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
                                       children: [
                                         Image.asset(
                                           "icons/ic_weather.png",
@@ -208,7 +240,10 @@ class HomePageUI extends StatelessWidget {
                                   Container(
                                     height: 85.sp,
                                     alignment: Alignment.center,
-                                    decoration: BoxDecoration(color: MyAppColors.primarySkyBlueColor, borderRadius: BorderRadius.circular(10.sp)),
+                                    decoration: BoxDecoration(
+                                        color: MyAppColors.primarySkyBlueColor,
+                                        borderRadius:
+                                            BorderRadius.circular(10.sp)),
                                     child: CustomText(
                                       text: "Workspace",
                                       textSize: 10.sp,
@@ -217,11 +252,16 @@ class HomePageUI extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.only(top: 5.sp, right: 5.sp),
+                                    padding:
+                                        EdgeInsets.only(top: 5.sp, right: 5.sp),
                                     child: Container(
                                       width: 30.sp,
                                       height: 15.sp,
-                                      decoration: BoxDecoration(color: MyAppColors.primaryLightThemeColor, borderRadius: BorderRadius.circular(7.sp)),
+                                      decoration: BoxDecoration(
+                                          color: MyAppColors
+                                              .primaryLightThemeColor,
+                                          borderRadius:
+                                              BorderRadius.circular(7.sp)),
                                       alignment: Alignment.center,
                                       child: CustomText(
                                         text: "Soon",
@@ -241,7 +281,9 @@ class HomePageUI extends StatelessWidget {
                                   child: Container(
                                 height: 85.sp,
                                 alignment: Alignment.center,
-                                decoration: BoxDecoration(color: MyAppColors.primaryLightGreenColor, borderRadius: BorderRadius.circular(10.sp)),
+                                decoration: BoxDecoration(
+                                    color: MyAppColors.primaryLightGreenColor,
+                                    borderRadius: BorderRadius.circular(10.sp)),
                                 child: CustomText(
                                   text: "Trackers",
                                   textSize: 10.sp,
@@ -259,7 +301,10 @@ class HomePageUI extends StatelessWidget {
                                   Container(
                                     height: 85.sp,
                                     alignment: Alignment.center,
-                                    decoration: BoxDecoration(color: MyAppColors.primaryGreenColor, borderRadius: BorderRadius.circular(10.sp)),
+                                    decoration: BoxDecoration(
+                                        color: MyAppColors.primaryGreenColor,
+                                        borderRadius:
+                                            BorderRadius.circular(10.sp)),
                                     child: CustomText(
                                       text: "Journal",
                                       textSize: 10.sp,
@@ -268,11 +313,16 @@ class HomePageUI extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.only(top: 5.sp, right: 5.sp),
+                                    padding:
+                                        EdgeInsets.only(top: 5.sp, right: 5.sp),
                                     child: Container(
                                       width: 30.sp,
                                       height: 15.sp,
-                                      decoration: BoxDecoration(color: MyAppColors.primaryLightThemeColor, borderRadius: BorderRadius.circular(7.sp)),
+                                      decoration: BoxDecoration(
+                                          color: MyAppColors
+                                              .primaryLightThemeColor,
+                                          borderRadius:
+                                              BorderRadius.circular(7.sp)),
                                       alignment: Alignment.center,
                                       child: CustomText(
                                         text: "New",
@@ -295,7 +345,11 @@ class HomePageUI extends StatelessWidget {
                                   Container(
                                     height: 85.sp,
                                     alignment: Alignment.center,
-                                    decoration: BoxDecoration(color: MyAppColors.primaryLightBlueColor, borderRadius: BorderRadius.circular(10.sp)),
+                                    decoration: BoxDecoration(
+                                        color:
+                                            MyAppColors.primaryLightBlueColor,
+                                        borderRadius:
+                                            BorderRadius.circular(10.sp)),
                                     child: CustomText(
                                       text: "View All",
                                       textSize: 10.sp,
@@ -304,7 +358,8 @@ class HomePageUI extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                      padding: EdgeInsets.only(top: 5.sp, right: 5.sp),
+                                      padding: EdgeInsets.only(
+                                          top: 5.sp, right: 5.sp),
                                       child: Image.asset(
                                         "icons/ic_rightUpArrow.png",
                                         height: 20.sp,
@@ -318,7 +373,8 @@ class HomePageUI extends StatelessWidget {
 
                         /// Selection list section
                         Padding(
-                          padding: EdgeInsets.only(left: 16.w, top: 20.h, bottom: 20.h),
+                          padding: EdgeInsets.only(
+                              left: 16.w, top: 20.h, bottom: 20.h),
                           child: Stack(
                             alignment: Alignment.centerRight,
                             children: [
@@ -329,24 +385,47 @@ class HomePageUI extends StatelessWidget {
                                   child: Row(
                                     children: controller.dataItemList.value
                                         .mapIndexed((index, item) => Padding(
-                                              padding: EdgeInsets.only(right: 5.w),
+                                              padding:
+                                                  EdgeInsets.only(right: 5.w),
                                               child: GestureDetector(
                                                 onTap: () {
-                                                  controller.dataItemList.value.forEach((element) {
+                                                  for (var element in controller
+                                                      .dataItemList.value) {
                                                     element.isSelected = false;
-                                                  });
+                                                  }
                                                   item.isSelected = true;
-                                                  controller.dataItemList.refresh();
+                                                  controller.dataItemList
+                                                      .refresh();
                                                 },
                                                 child: Container(
-                                                  padding: EdgeInsets.symmetric(vertical: 12.sp, horizontal: 22.sp),
-                                                  decoration: BoxDecoration(color: item.isSelected ?? false ? MyAppColors.primaryDarkGreyColor : MyAppColors.primaryLightBlackColor, borderRadius: BorderRadius.circular(30.sp)),
+                                                  padding: EdgeInsets.symmetric(
+                                                      vertical: 12.sp,
+                                                      horizontal: 22.sp),
+                                                  decoration: BoxDecoration(
+                                                      color: item.isSelected ??
+                                                              false
+                                                          ? MyAppColors
+                                                              .primaryDarkGreyColor
+                                                          : MyAppColors
+                                                              .primaryLightBlackColor,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              30.sp)),
                                                   child: CustomText(
                                                     text: item.title ?? '',
                                                     textSize: 12.sp,
-                                                    fontWeight: item.isSelected ?? false ? FontWeight.w700 : FontWeight.w400,
-                                                    fontFamily: FontFamily.sfProRegular,
-                                                    color: item.isSelected ?? false ? MyAppColors.primaryWhiteColor : const Color(0xFF96999E),
+                                                    fontWeight:
+                                                        item.isSelected ?? false
+                                                            ? FontWeight.w700
+                                                            : FontWeight.w400,
+                                                    fontFamily:
+                                                        FontFamily.sfProRegular,
+                                                    color: item.isSelected ??
+                                                            false
+                                                        ? MyAppColors
+                                                            .primaryWhiteColor
+                                                        : const Color(
+                                                            0xFF96999E),
                                                   ),
                                                 ),
                                               ),
@@ -369,7 +448,9 @@ class HomePageUI extends StatelessWidget {
                                   ),
                                 ),
                                 child: Container(
-                                  decoration: BoxDecoration(color: MyAppColors.primaryDarkGreyColor, shape: BoxShape.circle),
+                                  decoration: BoxDecoration(
+                                      color: MyAppColors.primaryDarkGreyColor,
+                                      shape: BoxShape.circle),
                                   padding: EdgeInsets.all(7.sp),
                                   child: Image.asset("icons/ic_plus.png"),
                                 ),
@@ -379,7 +460,11 @@ class HomePageUI extends StatelessWidget {
                         ),
 
                         /// Data view section based on selection of list index
-                        if (controller.dataItemList.firstWhereOrNull((element) => element.isSelected ?? false)?.title == "Timebox")
+                        if (controller.dataItemList
+                                .firstWhereOrNull(
+                                    (element) => element.isSelected ?? false)
+                                ?.title ==
+                            "Timebox")
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal: 16.w),
                             child: Column(
@@ -390,34 +475,50 @@ class HomePageUI extends StatelessWidget {
                                           height: 220.h,
                                           width: double.infinity,
                                           padding: EdgeInsets.all(12.sp),
-                                          decoration: BoxDecoration(color: item.cardBGColor, borderRadius: BorderRadius.circular(10.sp)),
+                                          decoration: BoxDecoration(
+                                              color: item.cardBGColor,
+                                              borderRadius:
+                                                  BorderRadius.circular(10.sp)),
                                           child: Column(
                                             children: [
                                               Row(
                                                 children: [
-                                                  Image.asset(item.icon ?? '', width: 48.sp, height: 48.sp),
+                                                  Image.asset(item.icon ?? '',
+                                                      width: 48.sp,
+                                                      height: 48.sp),
                                                   SizedBox(width: 5.w),
                                                   Expanded(
                                                       child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
                                                     children: [
                                                       CustomText(
                                                         text: "Routine",
-                                                        fontWeight: FontWeight.w700,
+                                                        fontWeight:
+                                                            FontWeight.w700,
                                                         textSize: 16.sp,
-                                                        fontFamily: FontFamily.sfProRegular,
+                                                        fontFamily: FontFamily
+                                                            .sfProRegular,
                                                       ),
                                                       Row(
                                                         children: [
                                                           CustomText(
-                                                            text: "${item.weekDaysList} | ${item.time}",
-                                                            fontWeight: FontWeight.w700,
+                                                            text:
+                                                                "${item.weekDaysList} | ${item.time}",
+                                                            fontWeight:
+                                                                FontWeight.w700,
                                                             textSize: 12.sp,
-                                                            fontFamily: FontFamily.sfProRegular,
-                                                            color: const Color(0xFF484848),
+                                                            fontFamily: FontFamily
+                                                                .sfProRegular,
+                                                            color: const Color(
+                                                                0xFF484848),
                                                           ),
                                                           SizedBox(width: 4.w),
-                                                          Image.asset("icons/ic_refresh.png", height: 18.sp, width: 18.sp)
+                                                          Image.asset(
+                                                              "icons/ic_refresh.png",
+                                                              height: 18.sp,
+                                                              width: 18.sp)
                                                         ],
                                                       )
                                                     ],
@@ -426,8 +527,13 @@ class HomePageUI extends StatelessWidget {
                                                   Container(
                                                     width: 36.sp,
                                                     height: 36.sp,
-                                                    padding: EdgeInsets.all(12.sp),
-                                                    decoration: BoxDecoration(border: Border.all(color: MyAppColors.primaryLightThemeColor), shape: BoxShape.circle),
+                                                    padding:
+                                                        EdgeInsets.all(12.sp),
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            color: MyAppColors
+                                                                .primaryLightThemeColor),
+                                                        shape: BoxShape.circle),
                                                     child: Image.asset(
                                                       "icons/ic_tick.png",
                                                     ),
@@ -437,71 +543,126 @@ class HomePageUI extends StatelessWidget {
                                               SizedBox(height: 10.sp),
                                               Expanded(
                                                   child: Padding(
-                                                padding: EdgeInsets.symmetric(horizontal: 5.w),
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 5.w),
                                                 child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
                                                   children: [
                                                     CustomText(
                                                       text: item.title ?? '',
-                                                      fontWeight: FontWeight.w600,
+                                                      fontWeight:
+                                                          FontWeight.w600,
                                                       textSize: 16.sp,
-                                                      fontFamily: FontFamily.sfProRegular,
+                                                      fontFamily: FontFamily
+                                                          .sfProRegular,
                                                     ),
                                                     SizedBox(height: 5.sp),
                                                     CustomText(
                                                       text: item.subTitle ?? '',
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       textSize: 14.sp,
-                                                      color: const Color(0xFF484848),
-                                                      fontFamily: FontFamily.sfProRegular,
+                                                      color: const Color(
+                                                          0xFF484848),
+                                                      fontFamily: FontFamily
+                                                          .sfProRegular,
                                                       maxLine: 3,
-                                                      textOverflow: TextOverflow.ellipsis,
+                                                      textOverflow:
+                                                          TextOverflow.ellipsis,
                                                     ),
                                                     SizedBox(height: 10.sp),
                                                     Row(
                                                       children: [
                                                         CustomText(
-                                                          text: item.status ?? '',
-                                                          fontWeight: FontWeight.w900,
+                                                          text:
+                                                              item.status ?? '',
+                                                          fontWeight:
+                                                              FontWeight.w900,
                                                           textSize: 10.sp,
-                                                          color: MyAppColors.primaryRedColor,
-                                                          fontFamily: FontFamily.sfProBold,
+                                                          color: MyAppColors
+                                                              .primaryRedColor,
+                                                          fontFamily: FontFamily
+                                                              .sfProBold,
                                                         ),
                                                         SizedBox(width: 15.w),
                                                         Expanded(
                                                           child: CustomText(
-                                                            text: item.overDueTime ?? '',
-                                                            fontWeight: FontWeight.w900,
+                                                            text:
+                                                                item.overDueTime ??
+                                                                    '',
+                                                            fontWeight:
+                                                                FontWeight.w900,
                                                             textSize: 10.sp,
-                                                            color: MyAppColors.primaryRedColor,
-                                                            fontFamily: FontFamily.sfProBold,
+                                                            color: MyAppColors
+                                                                .primaryRedColor,
+                                                            fontFamily:
+                                                                FontFamily
+                                                                    .sfProBold,
                                                           ),
                                                         ),
                                                         Row(
                                                           children: [
                                                             Stack(
                                                               children: [
-                                                                const SizedBox.shrink(),
-                                                                if (item.participant?.isNotEmpty ?? false)
-                                                                  ...List<Widget>.generate(min(item.participant?.length ?? 0, 4), (index) {
-                                                                    if (index < (((item.participant?.length ?? 0) <= 4) ? item.participant?.length ?? 0 : ((min(item.participant?.length ?? 0, 4) - 1)))) {
+                                                                const SizedBox
+                                                                    .shrink(),
+                                                                if (item.participant
+                                                                        ?.isNotEmpty ??
+                                                                    false)
+                                                                  ...List<Widget>.generate(
+                                                                      min(
+                                                                          item.participant?.length ??
+                                                                              0,
+                                                                          4),
+                                                                      (index) {
+                                                                    if (index <
+                                                                        (((item.participant?.length ?? 0) <= 4)
+                                                                            ? item.participant?.length ??
+                                                                                0
+                                                                            : ((min(item.participant?.length ?? 0, 4) -
+                                                                                1)))) {
                                                                       return Padding(
-                                                                        padding: EdgeInsets.only(left: index * 15.w),
-                                                                        child: Image.asset(item.participant?[index] ?? '', height: 22.sp, width: 22.sp),
+                                                                        padding:
+                                                                            EdgeInsets.only(left: index * 15.w),
+                                                                        child: Image.asset(
+                                                                            item.participant?[index] ??
+                                                                                '',
+                                                                            height:
+                                                                                22.sp,
+                                                                            width: 22.sp),
                                                                       );
-                                                                    } else if ((item.participant?.length ?? 0) > min((item.participant?.length ?? 0), 4)) {
+                                                                    } else if ((item.participant?.length ??
+                                                                            0) >
+                                                                        min(
+                                                                            (item.participant?.length ??
+                                                                                0),
+                                                                            4)) {
                                                                       return Padding(
-                                                                        padding: EdgeInsets.only(left: index * 15.w),
-                                                                        child: Container(
-                                                                          height: 22.sp,
-                                                                          width: 22.sp,
-                                                                          alignment: Alignment.center,
-                                                                          decoration: BoxDecoration(color: MyAppColors.primaryWhiteColor, border: Border.all(color: MyAppColors.primaryBlackColor, width: 0.5), shape: BoxShape.circle),
-                                                                          child: CustomText(
-                                                                            text: "+4",
-                                                                            textSize: 10.sp,
-                                                                            fontFamily: FontFamily.sfProSemiBold,
-                                                                            fontWeight: FontWeight.w700,
+                                                                        padding:
+                                                                            EdgeInsets.only(left: index * 15.w),
+                                                                        child:
+                                                                            Container(
+                                                                          height:
+                                                                              22.sp,
+                                                                          width:
+                                                                              22.sp,
+                                                                          alignment:
+                                                                              Alignment.center,
+                                                                          decoration: BoxDecoration(
+                                                                              color: MyAppColors.primaryWhiteColor,
+                                                                              border: Border.all(color: MyAppColors.primaryBlackColor, width: 0.5),
+                                                                              shape: BoxShape.circle),
+                                                                          child:
+                                                                              CustomText(
+                                                                            text:
+                                                                                "+4",
+                                                                            textSize:
+                                                                                10.sp,
+                                                                            fontFamily:
+                                                                                FontFamily.sfProSemiBold,
+                                                                            fontWeight:
+                                                                                FontWeight.w700,
                                                                           ),
                                                                         ),
                                                                       );
@@ -525,7 +686,10 @@ class HomePageUI extends StatelessWidget {
                             ),
                           )
                         else
-                          Padding(padding: EdgeInsets.symmetric(horizontal: 16.w), child: SizedBox(height: 250.h, child: comingSoonView())),
+                          Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 16.w),
+                              child: SizedBox(
+                                  height: 250.h, child: comingSoonView())),
                       ],
                     ),
                   ))
