@@ -110,9 +110,10 @@ class ChallengesPageUI extends StatelessWidget {
                                   children: [
                                     GestureDetector(
                                       onTap: () {
-                                        controller.dataItemList.value.forEach((element) {
+                                       
+                                        for (var element in controller.dataItemList.value) {
                                           element.isSelected = false;
-                                        });
+                                        }
                                         item.isSelected = true;
                                         controller.dataItemList.refresh();
                                       },
